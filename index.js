@@ -1,8 +1,8 @@
 const express = require("express");
 
 const server = express();
-
-server.listen(3000, function () {
+let port=process.env.PORT || 3000;
+server.listen(port, function () {
   console.log("The Server is up and Running");
 });
 
